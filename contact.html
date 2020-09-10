@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="image/favicon.ico" />
+        <meta name="author" content="Sabin Nakarmi">
+        <title>Contact</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
+        <script type="text/javascript" src="js/formValidation.js">
+            
+        </script>
+
+    </head>
+    
+    <body style="background-image: url(image/slide1.jpg);background-repeat:no-repeat; background-attachment: fixed; background-size: 100% 100%">    
+        <div style="width: 100%; overflow: hidden; text-align: center;">
+        <header>
+            <div id="wrapper" style="width: 1366px ;display: inline-block;">
+                <p>
+                <a href="index.html" style="text-decoration: none; color: #000000">
+                    <div id="divLogo">
+                        <img alt="Avatar" id="logo" src="image/techmaxlogo.jpg" width="180" height="80" style="float: left;margin-bottom: 90px;">
+                    </div>
+                    <div id="divSlogan">
+                        <p>Software Design and Training Services</p>
+                    </div>
+                </a>
+                <div id="divNavigation">   
+                <ul id="navigationBar">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="hire.html">WE'RE HIRING</a></li>
+                    <li><a href="trainings.html">TRAININGS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="team.html">MEET THE TEAM</a></li>
+                </ul>
+            </div></p>
+            </div>
+        </header>
+        </div>
+        <div id="content" style="width: 1200px; margin: 0 auto;">
+            <div class="hireCard">
+            <!-- Contact Information -->
+                <div style="font-size:44px; text-align:center;">FEEL FREE TO REACH OUT TO US<br></div>
+                <div style="text-align: center;">
+                    <p style="font-size:30px;"><img src="image/phone.png" width="20px" height="20px">+977-1-5554444, +977-1-5555555<br>info@techmaxitsolutions.com</p>
+                </div>        
+                <hr>
+                <div style="display: flex; margin-top: 25px;">
+                <!-- Job Application -->
+                    <div class="card" style="width: 540px; margin-left: 10px; margin-top: 15px;" >
+                        <div class="cardHeading" style="text-align: center; width: 500px;">
+                            <h2 id="mobile">Apply for a Job</h2><hr>
+                        </div>
+                        <div class="containerCard" style="display: inline-block;width: 508px;">
+                                
+                            <form  method="POST" name="Registration" autocomplete="off" onsubmit="return(validate());" style=" text-align: center; font-size: 24px; ">
+
+                                <table cellpadding="2" width="100%" bgcolor="#FFFFFF" align="right"
+                                cellspacing="2" style="height: 445px">
+
+                                <tr>
+                                <td>Position: </td>
+                                <td><input type="radio" name="jobPosition" value="male" size="10">Job
+                                <input type="radio" name="jobPosition" value="Female" size="10">Internship</td>
+                                </tr>
+
+                                <tr>
+                                <td>Name: </td>
+                                <td><input type=text name=txtName id="textname" size="30" style="width:250px;" placeholder="Enter your full name"></td>
+                                </tr>
+
+                                <tr>
+                                <td>Address: </td>
+                                <td><input type="text" name="txtAddress"
+                                id="personaladdress" size="30" style="width:250px; " placeholder="Enter your current address"></td>
+                                </tr>
+                                
+                                <tr>
+                                <td>Category: </td>
+                                <td><select name="Category" style="width:250px;">
+                                <option value="-1" selected>SELECT......</option>
+                                <option value="Software Engineer" >Software Engineer</option>
+                                        <option value="Data Analyst" >Data Analyst</option>
+                                        <option value="System Administrator">System Administrator</option>        
+                                        <option value="Marketing Assistant">Marketing Assistant</option>
+
+                                </select></td>
+                                </tr>
+
+                                <tr>
+                                <td>Email:  </td>
+                                <td><input type="text" name="emailid" id="emailid" size="30" style="width:250px;" placeholder="Enter your email address"></td>
+                                </tr>
+
+                                <tr>
+                                <td>Contact Number: </td>
+                                <td><input type="text" name="mobileno" id="mobileno" size="30" style="width:250px;" placeholder="Enter your contact number"></td>
+                                </tr>
+
+                                <tr>
+                                <td>Github/Bitbucket profile: </td>
+                                <td><input type="text" name="githubbitbucket" id="github" size="30" style="width:250px;" placeholder="Link your github / bitbucket profile"></td>
+                                </tr>
+
+                                <tr>
+                                <td>Comments: </td>
+                                <td>
+                                <textarea name="comments" id="comments" style="width:250px;height:100px;color:#000000;" placeholder="Enter your comments"></textarea></td></tr>
+                                <br>
+
+                                <tr>
+                                <td><input type="reset"></td>
+                                <td colspan="2"><input type="submit" value="Submit" /></td>
+                                </tr>
+                                </table>
+                            </form>
+                        </div>         
+                    </div>
+                <!-- Slideshow -->
+                    <div class="car" style="margin-left: 25px;height: 600px; margin-top: 15px;">
+                        <div class="slide"  >
+                            <img class="jobSlides" src="image/job1.jpg" style="width="600" height="600"" alt="Avatar">
+                            <img class="jobSlides" src="image/job2.jpg" style="width="600" height="600"" alt="Avatar">
+                            <img class="jobSlides" src="image/job3.png" style="width="600" height="600"" alt="Avatar">            
+                        </div>
+                        <!-- Slideshow JavaScript -->
+                        <script>
+                            var myIndex = 0;
+                            jobSlideshow();
+
+                            function jobSlideshow() {
+                                var i;
+                                var x = document.getElementsByClassName("jobSlides");
+                                for (i = 0; i < x.length; i++) {
+                                   x[i].style.display = "none";  
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {myIndex = 1}    
+                                x[myIndex-1].style.display = "block";  
+                                setTimeout(jobSlideshow, 3000);
+                            }
+                        </script>       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <h4 style="padding-top: 40px">© TechMax IT Solutions, 2017</h4>
+        </footer>
+        	
+    </body>
+</html>

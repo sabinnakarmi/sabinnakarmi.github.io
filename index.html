@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Sabin Nakarmi">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="image/favicon.ico" />
+        <title>TechMax IT Solutions</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
+    	<!-- Intenrnal CSS definition -->
+        <style>
+			.mySlides{
+				display:none;
+                border-radius: 15px;
+			}
+            #headerdiv{
+                text-align: center;
+            }
+
+        </style>
+        
+    </head>
+    
+    <body style="background-image: url(image/slide1.jpg);background-repeat:no-repeat; background-attachment: fixed; background-size: 100% 100%">    
+        <div style="width: 100%; overflow: hidden; text-align: center;">
+        <header>
+            <div id="wrapper" style="width: 1366px ;display: inline-block;">
+                <p>
+                <a href="index.html" style="text-decoration: none; color: #000000">
+                    <div id="divLogo">
+                        <img alt="Avatar" id="logo" src="image/techmaxlogo.jpg" width="180" height="80" style="float: left;margin-bottom: 90px;">
+                    </div>
+                    <div id="divSlogan">
+                        <p>Software Design and Training Services</p>
+                    </div>
+                </a>
+                <div id="divNavigation">   
+                    <ul id="navigationBar">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="hire.html">WE'RE HIRING</a></li>
+                        <li><a href="trainings.html">TRAININGS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="team.html">MEET THE TEAM</a></li>
+                    </ul>
+                </div></p>
+            </div>
+        </header>
+        </div>
+        <div id="content" align="center" style="width: 1200px; margin: 0 auto;">
+        <div class="hireCard">
+        <!-- Slideshow -->
+            <div class="slide" style="padding: 50px;" >
+      			<img class="mySlides" src="image/slide3.jpg" style="width="780" height="440"" alt="Avatar">
+                <img class="mySlides" src="image/slide5.jpg" style="width="780" height="440"" alt="Avatar">
+                <img class="mySlides" src="image/slide6.jpg" style="width="780" height="440"" alt="Avatar">
+                <img class="mySlides" src="image/slide7.jpg" style="width="780" height="440"" alt="Avatar">
+                
+      			
+    		</div>
+            <!-- Slideshow Javascript -->
+    		<script>
+    			var myIndex = 0;
+    			indexSlideshow();
+
+    			function indexSlideshow() {
+    			    var i;
+    			    var x = document.getElementsByClassName("mySlides");
+    			    for (i = 0; i < x.length; i++) {
+    			       x[i].style.display = "none";  
+    			    }
+    			    myIndex++;
+    			    if (myIndex > x.length) {myIndex = 1}    
+    			    x[myIndex-1].style.display = "block";  
+    			    setTimeout(indexSlideshow, 3000);
+    			}
+    		</script>
+            
+            <div style="font-size:44px; text-align:center;; padding-bottom: 50PX;">YOUR <b>DREAMS</b>. YOUR <b>IDEAS</b>.<br>WE MAKE THEM A <b>REALITY</b></div>
+            <!-- Information cards -->
+            <div style="display: flex; padding-bottom: 50px;padding-top: 50px;width: 1100px;margin: 0 auto;text-align: center; font-weight: bold;">
+
+                <div class="card" style="margin-left: 70px ;width: 250px;">
+                    <a href="portfolio.html#mobile" style="text-decoration: none; color: #000000"><img alt="Avatar" src="image/pc.png" style="border-radius: 15px;">
+                    <div class="container" style="border-radius: 15px;" >
+                        <p>MOBILE APPLICATIONS</p>
+                    </div></a>
+                </div>
+                <div class="card" style="margin-left: 100px ;width: 250px;">
+                    <a href="portfolio.html#mobile" style="text-decoration: none; color: #000000"><img alt="Avatar" src="image/enterprise.png" style="border-radius: 15px;">
+                    <div class="container" style="border-radius: 15px;">
+                        <p>ENTERPRISE SOLUTIONS</p>
+                    </div></a>
+                </div>
+                <div class="card" style="margin-left: 100px ;width: 250px;">
+                    <a href="portfolio.html#mobile" style="text-decoration: none; color: #000000"><img alt="Avatar" src="image/business.jpg" style="border-radius: 15px;">
+                    <div class="container" style="border-radius: 15px;">
+                        <p>BUSINESS SOLUTIONS</p>
+                    </div></a>
+                </div>
+
+            </div>
+            <!-- About Us Card -->
+	        <div class="card" style="width: 1100px;">
+                <div class="cardHeading">
+                    <h2>TECHMAX HACKATHON 2017</h2><hr>
+                </div>
+                <div class="containerCard" style="display: inline-block;">
+                        <p>
+                        <img src="image/pcgroup.png" width="auto" height"auto" style="float: left;">
+                        <p style="padding-top: 50px; text-align: justify; font-size: 24px">Registration for the TechMax Hackathon is now open. Participate to compete on a national stage to address issues concerning the topics technology can help solve or mitigate.</p></p>
+                </div>
+            </div>
+            <div style="overflow: hidden; width: 1100px ">
+                <div class="card" style="width: 540px; float: left; ">
+                    <div class="cardHeading">
+                        <h2>ABOUT US</h2><hr>
+                    </div>
+                    <div class="containerCard" style="height: 525px;">
+                            <p>
+                            <img src="image/about.png" style="border-radius: 5px; height: 50%; width: 50% "><br>
+                            <p style="padding-top: 50px; text-align: justify; font-size: 24px"> We provide technical solutions to all your mobile application, business application and enterprise solutions. We have also taken it to heart to provide quality training to prepare you for a career in information technology.</p></p>
+                    </div>
+                </div>
+                <div >
+                <!-- SpaceApps Card -->
+                    <div class="card" style="width: 540px; height: 206px; float: right;">
+                                <a href="https://2017.spaceappschallenge.org/locations/kathmandu/" target="_blank" style="text-decoration: none; color: #000000">
+                                    <img src="image/spaceapps.jpeg" style="border-radius: 15px;">
+                                </a>
+                        
+                    </div>
+
+                <!-- Map Card -->
+                    <div class="card" style="width: 540px; float: right;">
+                        <div class="cardHeading">
+                            <h2>OUR LOCATION</h2><hr>
+                        </div>
+                        <div id="googleMap" class="containerCard" style="height: 300px; clear: both;">
+                                
+                        </div>
+                    </div>
+                <!-- Map JavaScript -->
+                    <script>
+                        function myMap() {
+                        var mapProp= {
+                            center:new google.maps.LatLng(27.677658, 85.313791),
+                            zoom:16,
+                        };
+                        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                        var marker = new google.maps.Marker({
+                                  position: {lat:27.677658, lng:85.313791},
+                                  map: map,
+                                  title: 'Hello World!'
+                                });
+                        }</script>
+                <!-- Google Map API Javascript -->
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHYfv3mZzZgdYjcT7bdIWCUc_DqO74Qzc&callback=myMap"></script>
+
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+    <h4 style="padding-top: 40px">© TechMax IT Solutions, 2017</h4>
+    </footer>
+    	
+</body>
+</html>
